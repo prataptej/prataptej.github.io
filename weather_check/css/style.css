@@ -1,0 +1,79 @@
+#hero{
+  animation: slide 20s infinite;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+
+}
+.load{
+  animation: slide 2s;
+}
+#hero-overlay{
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+}
+.jumbotron {
+   background: rgba(0, 0, 0, 0.2);
+}
+body{
+  font-family: 'Comfortaa', cursive;
+}
+h1{
+  font-family: 'Marck Script', cursive;
+  vertical-align: text-top;
+}
+footer{
+  font-family: 'Shadows Into Light', cursive;
+  letter-spacing: 1px;
+}
+.card {
+   background: rgba(0, 0, 0, 0.2);
+   margin-top: 40px;
+   padding: 15px 5px;
+   height: 200px;
+}
+.card:hover{
+  background: rgba(0, 0, 0, 0.4);
+}
+@keyframes slide {
+0%{
+  background-image: url('../images/nature1.jpg');
+}
+20%{
+  background-image: url('../images/nature1.jpg');
+}
+20.1%{
+  background-image: url('../images/nature.jpg');
+}
+
+40%{
+  background-image: url('../images/nature.jpg');
+}
+40.1%{
+  background-image: url('../images/nature3.jpg');
+}
+60%{
+  background-image: url('../images/nature3.jpg');
+}
+60.1%{
+  background-image: url('../images/nature4.jpg');
+}
+80%{
+  background-image: url('../images/nature4.jpg');
+}
+80.1%{
+  background-image: url('../images/nature5.jpg');
+}
+100%{
+  background-image: url('../images/nature5.jpg');
+}
+}

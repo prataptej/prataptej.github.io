@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Weather</title>
+	<meta name = "keywords" content = "pratap, tej , prataptej ,weather, check, weathercheck, temperature, city temperature, github, prataptej.github.io" />
+	<meta name = "description" content = "Weather Updates of every Indian City." />
+  <meta name = "author" content = "Tej Pratap Singh" />
+	<link rel="icon" type="image/png" href="images/cloud.png">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Shadows+Into+Light|Comfortaa:300+Marck+Script" rel="stylesheet">
+	<link rel="stylesheet" href="css/weather-icons.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="hero">
+		<div class="load">
+
+		</div>
+		<div id="hero-overlay" class="text-white">
+			<h1 class="display-4 ml-5 my-3"><span class="wi wi-day-fog mr-2"></span>Weather Check</h1>
+			<div class="container">
+			<div class="jumbotron pl-5 py-5 w-sm-50 shadow-lg">
+				<legend class="lead"><span class="fa fa-angle-right mr-2"></span>Enter City Name:</legend>
+					<select id="cityname" class="mx-4">
+							<option value="">Select your city</option>
+					</select>
+					<button id="get" class="btn btn-outline-primary btn-lg px-5 mt-4 d-block ml-2"><span class="fa fa-search mr-1"></span>Check</button>
+			</div>
+			<div id="loading">
+
+			</div>
+			<div id="result" class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-10 col-sm-12 mx-auto">
+						<div class="card mb-3">
+						  <div class="card-body">
+						    <h4 class="card-title text-center"><span class="fa fa-couch mr-2"></span>Comfort Level</h4>
+								<hr class="bg-white">
+						    <div class="card-text lead ml-4" id="temp"></div>
+								<div class="card-text lead ml-4" id="humidity"></div>
+						  </div>
+						</div>
+					</div>
+					<div class=" col-lg-4 col-md-10 mx-auto col-sm-12">
+						<div class="card mb-3">
+						  <div class="card-body">
+						    <h4 class="card-title text-center"><span class="wi wi-day-cloudy mr-2"></span>Weather</h4>
+								<hr class="bg-white">
+						    <div class="card-text lead ml-4" id="weather"></div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-10 mx-auto col-sm-12">
+						<div class="card mb-3">
+						  <div class="card-body">
+						    <h4 class="card-title text-center"><span class="wi wi-horizon-alt mr-2"></span>Sunrise & Sunset</h4>
+								<hr class="bg-white">
+						    <div class="card-text lead ml-4" id="sun"></div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<footer class="footer fixed-bottom text-center text-white py-3">Tej Pratap Singh &copy;</footer>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="dis.json"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
