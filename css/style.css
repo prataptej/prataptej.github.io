@@ -50,6 +50,7 @@ h2 {
 
 .navbar .menu-items a {
   padding: 10px;
+  margin-right: 4px;
 }
 
 .navbar .menu-items a:hover {

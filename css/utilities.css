@@ -67,6 +67,23 @@
   margin: auto;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: #0090c1;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #fffd82;
+  color: #333;
+  font-weight: 500;
+}
+
 footer {
   display: flex;
   flex-direction: column;
