@@ -40,7 +40,7 @@ h2 {
 .logo h1 {
   line-height: 0;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .navbar .menu-items {
@@ -148,11 +148,13 @@ h2 {
   width: 200px;
   object-fit: cover;
   border-radius: 50%;
+  border: #fff 3px solid;
+  padding: 6px;
 }
 
 .project img:hover {
   border: #fffd82 3px solid;
-  padding: 4px;
+  padding: 6px;
   opacity: 0.8;
 }
 
@@ -195,9 +197,10 @@ h2 {
     border: 3px solid #0090c1;
   }
 
-  .hero .hero-content p {
+  .hero .hero-content .descr {
     font-size: 14px;
   }
+
   .hero .hero-content i {
     font-size: 25px;
   }
@@ -229,5 +232,9 @@ h2 {
 
   .project p {
     font-size: 14px;
+  }
+
+  footer {
+    height: 100vh;
   }
 }
