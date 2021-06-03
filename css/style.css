@@ -148,13 +148,13 @@ h2 {
   width: 200px;
   object-fit: cover;
   border-radius: 50%;
-  border: #fff 3px solid;
-  padding: 6px;
+  border: #fff 2px solid;
+  padding: 5px;
 }
 
 .project img:hover {
-  border: #fffd82 3px solid;
-  padding: 6px;
+  border: #fffd82 2px solid;
+  padding: 5px;
   opacity: 0.8;
 }
 
@@ -234,7 +234,54 @@ h2 {
     font-size: 14px;
   }
 
-  footer {
+  footer,
+  .hero {
     height: 100vh;
+  }
+}
+
+@media (max-width: 360px) {
+  .navbar {
+    height: 130px;
+  }
+  .hero .hero-content img {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #0090c1;
+  }
+
+  .hero .hero-content .descr {
+    font-size: 12px;
+  }
+
+  .hero .hero-content i {
+    font-size: 20px;
+  }
+
+  .quotes-start,
+  .quotes-end {
+    font-size: 40px;
+    line-height: 0;
+  }
+
+  .logo h1 {
+    line-height: 0;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .navbar .menu-items {
+    justify-content: space-evenly;
+  }
+
+  .navbar .menu-items a {
+    padding: 5px;
+    margin-right: 4px;
+  }
+
+  .about,
+  .experience,
+  .projects {
+    padding-top: 150px;
   }
 }
